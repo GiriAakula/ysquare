@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+.card {
+  height: 100vh;
+  background-color: skyblue;
+  text-align: center;
+  position: relative;
+}
+.innercard {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+}
+.password {
+  text-align: left;
+}
+.username {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.password input {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: slategray;
+  border: none;
+  opacity: 0.5;
+  width: 93%;
+}
+
+.username input {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: slategray;
+  opacity: 0.5;
+  border: none;
+  width: 93%;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.button button {
+  width: 100%;
+  padding: 10px;
+  background-color: slategray;
+  border: none;
+  color: white;
+  opacity: 0.6;
+}
+
+.notificationcard {
+  height: 300px;
+  background-color: white;
+  padding: 50px;
+  padding-top: 5px;
+  opacity: 0.9;
+}
+
+.notification {
+  background-color: teal;
+  padding: 10px;
+  color: white;
+}
+
+.logout button {
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+  border: none;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.user {
+  background-color: teal;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.innercard .admin {
+  padding: 10px;
+  width: 300px;
+}
+
+.user p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.adminRoute {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.errorText {
+  color: rgba(255, 0, 0, 0.541);
+  font-size: 12px;
+}
+
+.local {
+  margin: 0;
+  padding: 0;
+}
