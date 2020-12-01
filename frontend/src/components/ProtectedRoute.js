@@ -4,19 +4,18 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={(props) => {
-        // console.log(auth.isAuthenticated());
-        // if (auth.isAuthenticated()) {
-        //   return <Component {...props} />;
-        // } else {
-        //   return (
-        //     <Redirect
-        //       to={{
-        //         pathname: "/",
-        //         state: props.location
-        //       }}
-        //     />
-        //   );
-        // }
+        if (localStorage.getItem("username")) {
+          return <Component {...props} />;
+        } else {
+          return (
+            <Redirect
+              to={{
+                pathname: "/",
+                state: props.location
+              }}
+            />
+          );
+        }
       }}
     />
   );
